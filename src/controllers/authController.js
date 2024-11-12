@@ -89,8 +89,11 @@ const controller = {
     res.clearCookie("userId");
     return res.redirect("/");
   },
-  profile: function (req, res) {
-    return res.render("auth/profile");
+  profile: async function (req, res) {
+    let orders = await db.Order.findAll({
+      where: { userId: req.session.userLogged.id },
+    })
+    return res.render("auth/profile", {orders});
   },
 };
 

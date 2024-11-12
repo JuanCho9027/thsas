@@ -4,7 +4,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand waves-effect" href="/">
-            <strong class="blue-text">E-Commerce</strong>
+            <strong class="blue-text">TH</strong>
         </a>
 
         <!-- Collapse -->
@@ -19,7 +19,7 @@
             <!-- Left -->
             <ul class="navbar-nav mr-auto align-items-center">
                 <li class="nav-item <%= locals.active == '' ? 'active':'' %> ">
-                    <a class="nav-link waves-effect" href="/">Inicio
+                    <a class="nav-link waves-effect" href="/">HOME
                         <% if (locals.active=='/' ) { %>
 
                             <span class="sr-only">(current)</span>
@@ -27,9 +27,8 @@
                     </a>
                 </li>
                 <li class="nav-item <%= locals.active == 'products' ? 'active':'' %>">
-                    <a class="nav-link waves-effect" href="/products">Productos</a>
+                    <a class="nav-link waves-effect" href="/products">PRODUCTOS</a>
                     <% if (locals.active=='products' ) { %>
-
                         <span class="sr-only">(current)</span>
                         <% } %>
                 </li>
@@ -46,10 +45,10 @@
                     </li>
                     <% } else { %>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="/login">Ingreso</a>
+                            <a class="nav-link waves-effect" href="/login">INGRESO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="/register">Registro</a>
+                            <a class="nav-link waves-effect" href="/register">REGISTRO</a>
                         </li>
                         <% } %>
             </ul>
@@ -63,17 +62,8 @@
                         <span class="badge red z-depth-1 mr-1 cart-number">0</span>
                     </a>
                 </li>
-
-                <li class="nav-item">
-                    <a href="https://github.com/sargilla/node-ecommerce"
-                        class="nav-link border border-light rounded waves-effect" target="_blank">
-                        <i class="fab fa-github mr-2"></i>Repositorio
-                    </a>
-                </li>
             </ul>
-
         </div>
-
     </div>
 </nav>
 <!-- Navbar -->
